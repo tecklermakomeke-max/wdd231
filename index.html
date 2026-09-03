@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 -  Web Frontend Development I - Teckler N Makomeke</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I is a course home page for my Web Frontend Development I website and   profile for my project.">
+    <meta name="author" content="Teckler N Makomeke ">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+        <span>Teckler N Makomeke</span>
+        <button id="menu" aria-label="Menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="main-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Hello! I am Teckler N Makomeke and I am from Bulawayo, Zimbabwe, but currently reside in South Africa with my family of three. I am a very lovely young lady who enjoys playing with computers . I am studying with BYU and I am looking forward to learning more about this industry and also creating my own website through Web Frontend Development.</p>
+            </section>
+
+            <section class="card">
+                <h2>Student Profile</h2>
+                <img src="images/profile.jpg" alt="Student profile" width="300" height="400" loading="lazy">
+            </section>
+        </div>
+
+        <section class="card courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-cards"></div>
+            <p>The total credits for course listed above is <span id="totalCredits">6</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub" width="44" height="44"></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="X" width="44" height="44"></a>
+        </div>
+         <p>&copy; <span id="year"></span> | Teckler N Makomeke | South Africa</p>
+                        <p>Last Modification: <span id="lastModified"></span></P>
+    </footer>
+</body>     
+</html> 
