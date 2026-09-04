@@ -1,3 +1,7 @@
+
+// set up current year and last modified date
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 const courses=[
  {subject:'CSE',number:110,title:'Intro to Programming',credits:2,completed:true},
  {subject:'WDD',number:130,title:'Web Fundamentals',credits:2,completed:true},
