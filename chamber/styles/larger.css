@@ -1,0 +1,18 @@
+@media screen and (min-width:768px){
+#menu-btn{
+    display:none;
+}
+nav{
+    display:flex !important;
+    flex-direction:row;
+    justify-content:flex-end;
+    gap: 1.5em;
+    padding: 0 2rem;
+}
+#members.grid{
+    grid-template-columns:repeat(3, 1fr);
+}
+#members.list section{
+    grid-template-columns:100px 1fr 1fr 1fr auto;
+}
+}
