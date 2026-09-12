@@ -51,10 +51,3 @@ document.querySelector('#list').addEventListener('click', () => {
   membersContainer.classList.add('list');
   membersContainer.classList.remove('grid');
 });
-// hamburger menu
-const menuBtn = document.getElementById('menu-btn');
-const nav = document.getElementById('nav');
-menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    menuBtn.textContent = nav.classList.contains('open') ? '✕' : '☰';
-});
