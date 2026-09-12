@@ -1,55 +1,58 @@
 [
   {
     "name":"Centurion Mall",
-    "address":"1269 Gordon Ave, Centurion 0157",
-    "phone":"+27 12 345 0289",
+    "address":"1234 Gordon Ave, Centurion 0157",
+    "phone":"+27 72 345 0000",
     "website":"https://centurionmall.co.za",
-    "image":"images/mall.webp",
+    "image":"images/centurion-mall.jpg",
     "membership":3
   },
   {
     "name":"Gauteng Tech Solutions",
     "address":"45 Tech Park, Centurion",
-    "phone":"+27 12 872 2200",
+    "phone":"+27 83 760 1987",
     "website":"https://gautengtech.co.za",
-    "image":"images/tech.webp",
+    "image":"images/centurion.jpg",
     "membership":3
   },
   {
     "name":"Makomeke Logistics",
     "address":"78 Industrial Rd, Centurion",
-    "phone":"+27 12 698 8107",
+    "phone":"+27 61 284 8621",
     "website":"https://makomekelogistics.co.za",
-    "image":"images/logistics.webp",
+    "image":"images/m-logistics.jpg",
     "membership":2
   },
   {
-    "name":"The Church of Jesus Christ Latter-day Saints",
-    "address":"Cnr Lyttelton Rd and Burger Ave, Centurion 0157",
-    "phone":"+27 12 404 5375",
-    "website":"https://tshwanebakery.co.za",
-    "image":"images/bakery.webp",
+    "name":"The Church of Jesus Christ of Latter-day Saints",
+    "address":"Cnr Lyttelton Rd & Burger Ave, Centurion 0157",
+    "phone":"+27 64 093 9125",
+    "website":"https://www.churchofjesuschrist.org",
+    "image":"images/church.jpg",
     "membership":1
   },
   {
     "name":"SA Secure Bank",
     "address":"200 Main Rd, Centurion",
-    "phone":"+27 12 223 4522",
+    "phone":"+27 72 076 2401",
     "website":"https://sasecurebank.co.za",
-    "image":"images/bank.webp",
+    "image":"images/fnb-bank.jpg",
     "membership":3
   },
   {
-    "name":"Nozi Handmade Beaded Bags & Crafts",
-    "address":"33 Garden Lane, Centurion",
-    "phone":"+27 12 717 8072",
-    "website":"https://nozibags.co.za",
-    "image":"images/green.webp",
+    "name":"Centurion Home Care Facility",
+    "address":"88 Hospital Rd, Lyttelton, Centurion 0157",
+    "phone":"+27 81 864 5678",
+    "website":"https://centurionhomecare.co.za",
+    "image":"images/home-care.jpg",
     "membership":2
   },
-  {"name":"Centurion Home Care",
-  "address":"88 Home Rd, Centurion",
-  "phone":"+27 12 567 1234",
-  "website":"https://centurionhomecare.co.za",
-  "image":"images/home.webp","membership":1}
+  {
+    "name":"NOZI Handmade Beaded Bags & Crafts",
+    "address":"Centurion, South Africa",
+    "phone":"+27 78 201 7407",
+    "website":"https://www.instagram.com/nozi_beadedcrafts",
+    "image":"images/nozi.jpg",
+    "membership":3
+  }
 ]
