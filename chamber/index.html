@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centurion Capital City Chamber - Directory | Teckler Makomeke</title>
+<meta name="description" content="The Capital City Business Chamber is a business directory for the Centurion area where you can find local businesses and services.">
+<meta name="author" content="Teckler Makomeke">
+<link rel="icon" href="images/logo.jpg">
+<meta property="og:title" content="Centurion Capital City Chamber Directory">
+<meta property="og:description" content="The Centurion Capital City Chamber is a business directory for the Centurion area where you can find local businesses and services.">
+<meta property="og:image" content="https://tecklermakomeke-max.github.io/wdd231/chamber/images/logo.webp">
+<meta property="og:url" content="https://tecklermakomeke-max.github.io/wdd231/chamber/directory.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script src="scripts/directory.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/weather.js" defer></script>
+<script src="scripts/members.js" defer></script>
+</head>
+<body>
+<header>
+<div><img src="images/logo.jpg" alt="Logo" width="40" height="40"><span>Centurion Capital City Chamber</span></div>
+<div class="icons"> 
+<button id="menu-btn">☰</button>
+</div>
+</header>
+<nav id="nav">
+<a href="index.html">Home</a>
+<a href="discover.html">Discover</a>
+<a href="directory.html" class="active">Directory</a>
+<a href="join.html">Join</a>
+</nav>
+<main>
+<div class="hero">
+    <img src="images/hero.jpg" alt="Centurion City town" class="hero-img">
+    <a href="join.html" class="hero-button">Join Now</a>
+    <div class="home-box"> 
+    <section class="news">
+        <h2>Events</h2>
+        <p><strong>Business Breakfast</strong> -November 10, 2026 at Centurion Mall  | 8:00 AM </p>
+        <p><strong>Small Business Class</strong> -November 20, 2026 at Centurion Community Center  | 3:00 PM </p>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2>
+        <div id="weather"></div>
+        <p>Today: <span id="today-temp"></span>°C</p>
+        <p id="today-info"></p>
+        <div id="next-days"></div>
+    </section>
+    <section class="members-box">
+        <h2>Our Best Members</h2>
+        <div id="best-members"></div>
+    </section>
+</div>
+</main>
+<footer>
+<p><strong>Centurion Capital City Chamber</strong> | 1234 Gordon Ave, Centurion</p>
+<p>&copy;<span id="currentYear"></span> | Teckler Makomeke | South Africa</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>
