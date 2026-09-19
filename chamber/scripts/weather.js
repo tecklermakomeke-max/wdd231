@@ -1,26 +1,31 @@
-async function showBestMembers() {
-  const res = await fetch('data/members.json');
-  const allMembers = await res.json();
+const myKey = "f4122b3567595496c07d20bd63b27110"; 
+const lat = -25.86;
+const lon = 28.18;
 
-  // keep only gold and silver
-  const goodMembers = allMembers.filter(m => m.membership === "Gold" || m.membership === "Silver" || m.membership === 2 || m.membership === 3);
+const todayUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${myKey}`;
+const nextDaysUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${myKey}`;
 
-  // mix them randomly
-  goodMembers.sort(() => 0.5 - Math.random());
+async function showWeather() {
+  try {
+    const res1 = await fetch(todayUrl);
+    if (!res1.ok) throw new Error("key not ready");
+    const data1 = await res1.json();
+    document.querySelector('#current-temp').textContent = `${data1.main.temp}°C`;
+    document.querySelector('#weather-desc').textContent = data1.weather[0].description;
 
-  // take only 2 or 3
-  const topMembers = goodMembers.slice(0,3);
-
-  const box = document.querySelector('#best-members');
-  topMembers.forEach(m => {
-    box.innerHTML += `
-      <div class="member-card">
-        <h3>${m.name}</h3>
-        <img src="images/${m.image}" alt="${m.name}">
-        <p>${m.address}</p>
-        <p>${m.phone}</p>
-        <a href="${m.website}">Visit</a>
-      </div>`;
-  });
+    const res2 = await fetch(nextDaysUrl);
+    const data2 = await res2.json();
+    let html = "";
+    for(let i=0; i<3; i++){
+      let oneDay = data2.list[i*8];
+      let date = new Date(oneDay.dt_txt).toLocaleDateString();
+      html += `<p>${date} - ${oneDay.main.temp}°C</p>`;
+    }
+    document.querySelector('#forecast').innerHTML = html;
+  } catch (e) {
+    document.querySelector('#current-temp').textContent = "Key activating (2hrs)";
+    document.querySelector('#weather-desc').textContent = "Please wait...";
+    document.querySelector('#forecast').innerHTML = "";
+  }
 }
-showBestMembers();
+showWeather();

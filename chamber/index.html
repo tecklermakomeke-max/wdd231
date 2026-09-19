@@ -17,10 +17,9 @@
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/larger.css">
-<script src="scripts/directory.js" defer></script>
 <script src="scripts/navigation.js" defer></script>
 <script src="scripts/weather.js" defer></script>
-<script src="scripts/members.js" defer></script>
+<script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
 <header>
@@ -36,25 +35,31 @@
 <a href="join.html">Join</a>
 </nav>
 <main>
-<div class="hero">
-    <img src="images/hero.jpg" alt="Centurion City town" class="hero-img">
-    <a href="join.html" class="hero-button">Join Now</a>
-    <div class="home-box"> 
-    <section class="news">
-        <h2>Events</h2>
-        <p><strong>Business Breakfast</strong> -November 10, 2026 at Centurion Mall  | 8:00 AM </p>
-        <p><strong>Small Business Class</strong> -November 20, 2026 at Centurion Community Center  | 3:00 PM </p>
+  <div class="hero">
+    <img src="images/centurion-city.jpg" alt="Centurion town" class="hero-img" width="300" height="300">
+    <a href="join.html" class="cta-button">Join the Chamber</a>
+  </div>
+
+  <div class="home-grid">
+    
+    <section class="events">
+      <h2>Events Now</h2>
+      <p><strong>Business Breakfast</strong> - Oct 20 at Centurion Mall - 8am</p>
+      <p><strong>Small Business Class</strong> - Oct 25 - Learn marketing - 3pm</p>
+      <p><strong>Networking Night</strong> - Nov 05 - Meet local oweners - 6pm</p>
     </section>
+
     <section class="weather">
-        <h2>Weather</h2>
-        <div id="weather"></div>
-        <p>Today: <span id="today-temp"></span>°C</p>
-        <p id="today-info"></p>
-        <div id="next-days"></div>
+      <h2>Weather</h2>
+      <div id="weather">
+        <p>Hot or cold: <span id="current-temp"></span></p>
+        <p id="weather-desc"></p>
+        <div id="forecast"></div>
+      </div>
     </section>
-    <section class="members-box">
-        <h2>Our Best Members</h2>
-        <div id="best-members"></div>
+    <section class="spotlights">
+      <h2>Good Members</h2>
+      <div id="spotlight-container"></div>
     </section>
 </div>
 </main>

@@ -19,8 +19,50 @@ h1{text-align:center;color:#b91c1c;border-bottom:3px solid #b91c1c;padding-botto
 #members.list section{background:#fff;border-left:4px solid #b91c1c;padding:.8rem;display:grid;grid-template-columns:60px 1fr;gap:1rem;align-items:center}
 #members.list img{width:50px;height:50px}
 footer{background:#1f2937;color:#fff;text-align:center;padding:1.5rem;margin-top:2rem}
-.hero {position: relative}
-.hero img{width:100%}
-.join-btn{position:absolute;bottom:10px;right:10px;background:blue;color:white;padding:10px;}
-.home-box{display:grid;gap:10px;padding:10px;}
-#best-members{display:grid;gap:10px;}
+.hero { position: relative; } /* for button on top of image */
+.hero-img { width:100%; }
+.cta-button { 
+  position:absolute; 
+  bottom:10px; 
+  right:10px; 
+  background: blue; 
+  color: white; 
+  padding:10px; 
+}
+.home-grid {
+  display: grid;
+  gap: 15px;
+  padding: 15px;
+}
+
+.events, .weather, .spotlights {
+  background: #fff;
+  border: 2px solid #b91c1c;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.events h2, .weather h2, .spotlights h2 {
+  background: #b91c1c;
+  color: white;
+  margin: -15px -15px 15px -15px;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.spotlight-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.spotlight-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
