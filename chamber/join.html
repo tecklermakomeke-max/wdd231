@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centurion Capital City Chamber - Directory | Teckler Makomeke</title>
+<meta name="description" content="The Capital City Business Chamber is a business directory for the Centurion area where you can find local businesses and services.">
+<meta name="author" content="Teckler Makomeke">
+<link rel="icon" href="images/logo.jpg">
+<meta property="og:title" content="Centurion Capital City Chamber Directory">
+<meta property="og:description" content="The Centurion Capital City Chamber is a business directory for the Centurion area where you can find local businesses and services.">
+<meta property="og:image" content="https://tecklermakomeke-max.github.io/wdd231/chamber/images/logo.webp">
+<meta property="og:url" content="https://tecklermakomeke-max.github.io/wdd231/chamber/directory.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script src="scripts/join.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+</head>
+</head>
+<body>
+<header>
+  <div><img src="images/logo.jpg" alt="Logo" width="40" height="40"><span>Centurion Capital City Chamber</span></div>
+<div class="icons"> 
+<button id="menu-btn">☰</button>
+</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+  </header>
+
+<main class="join-page">
+  <h1>Join the Chamber - Membership</h1>
+  <div class="join-layout">
+    <form method="GET" action="thankyou.html" class="join-form">
+      <label>First Name
+        <input type="text" name="firstName" title="Your first name" autocomplete="given-name" required>
+      </label>
+      <label>Last Name
+        <input type="text" name="lastName" title="Your last name" autocomplete="family-name" required>
+      </label>
+      <label>Organizational Title
+        <input type="text" name="orgTitle" title="Organization title - minimum 7 characters, letters, hyphens and spaces only" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+      </label>
+      <label>Email Address
+        <input type="email" name="email" title="Your email address" autocomplete="email" placeholder="you@example.com" required>
+      </label>
+      <label>Mobile Phone Number
+        <input type="tel" name="phone" title="Your mobile phone number" autocomplete="tel" required>
+      </label>
+      <label>Business / Organization Name
+        <input type="text" name="businessName" title="Your business name" autocomplete="organization" required>
+      </label>
+      <label>Membership Level - First to Fourth Class
+        <select name="membership" title="Choose membership level" required>
+          <option value="">Please Select &#9662;</option>
+          <option value="np">First Class - NP Membership (Non-Profit - Free)</option>
+          <option value="bronze">Second Class - Bronze Membership</option>
+          <option value="silver">Third Class - Silver Membership</option>
+          <option value="gold">Fourth Class - Gold Premium Membership</option>
+        </select>
+      </label>
+      <label>Business Description
+        <textarea name="description" title="Describe your business/organization"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Join the Chamber">
+    </form>
+
+    <section class="membership-cards">
+      <div class="card" id="np-card">
+        <h2>First Class</h2>
+        <p>NP - Non Profit - Free</p>
+        <a href="#" class="open-modal" data-modal="np-dialog">Benefits</a>
+      </div>
+      <div class="card" id="bronze-card">
+        <h2>Second Class</h2>
+        <p>Bronze Membership</p>
+        <a href="#" class="open-modal" data-modal="bronze-dialog">Benefits</a>
+      </div>
+      <div class="card" id="silver-card">
+        <h2>Third Class</h2>
+        <p>Silver Membership</p>
+        <a href="#" class="open-modal" data-modal="silver-dialog">Benefits</a>
+      </div>
+      <div class="card" id="gold-card">
+        <h2>Fourth Class</h2>
+        <p>Gold Premium - Best Value</p>
+        <a href="#" class="open-modal" data-modal="gold-dialog">Benefits</a>
+      </div>
+    </section>
+  </div>
+
+  <dialog id="np-dialog"><h3>First Class - NP Benefits</h3><p><strong>Free</strong> for non-profits. Basic training, networking events, community directory listing.</p><button>Close</button></dialog>
+  <dialog id="bronze-dialog"><h3>Second Class - Bronze Benefits</h3><p><strong>R1000/year:</strong> 1 homepage spotlight, event discounts, training, networking.</p><button>Close</button></dialog>
+  <dialog id="silver-dialog"><h3>Third Class - Silver Benefits</h3><p><strong>R3000/year:</strong> All Second Class + 3 spotlights, advertising, 20% discount on events.</p><button>Close</button></dialog>
+  <dialog id="gold-dialog"><h3>Fourth Class - Gold Benefits</h3><p><strong>R4000/year:</strong> All Third Class + 5 spotlights, top homepage placement, free premium events, exclusive training.</p><button>Close</button></dialog>
+</main>
+
+<footer>
+<p><strong>Centurion Capital City Chamber</strong> | 1234 Gordon Ave, Centurion</p>
+<p>&copy;<span id="currentYear"></span> | Teckler Makomeke | South Africa</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>

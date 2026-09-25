@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { font-family: Arial; max-width: 600px; margin: 0 auto; padding: 20px; }
+
+.designOne label { display: block; margin: 15px 0; font-weight: bold; }
+.designOne input[type="text"],
+.designOne input[type="tel"],
+.designOne input[type="email"],
+.designOne input[type="date"],
+.designOne select,
+.designOne textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.designOne input[type="radio"] { width: 20px; margin-right: 8px; }
+
+.designOne input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+#results { 
+  background: #eee; 
+  padding: 20px; 
+  border-radius: 8px; 
+  margin-top: 20px;
+}

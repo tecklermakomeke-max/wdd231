@@ -10,8 +10,18 @@ nav{
     padding: 0 2rem;
 }
   .home-grid {
-     grid-template-columns: 1fr 1fr;
+   display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 1rem;
      } 
+     main {
+      max-width: 1100px;
+      margin: 0 auto;
+     }
+     .navigation {
+      display: flex;
+      justify-content: flex-end;
+     }
   .spotlights {
      grid-column: span 2;
      } 

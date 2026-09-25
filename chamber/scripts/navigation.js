@@ -1,16 +1,21 @@
-// 1. Hamburger menu
-const menuBtn = document.getElementById('menu-btn');
-const nav = document.getElementById('nav');
+// Get the button and nav elements - check if they exist first
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    menuBtn.textContent = nav.classList.contains('open') ? '✕' : '☰';
-});
-
-// 2. Close menu when clicking a link (mobile)
-document.querySelectorAll('#nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        menuBtn.textContent = '☰';
+if (hamButton && navigation) {
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
     });
-});
+}
+
+// Close menu when clicking a link (if exists)
+const navLinks = document.querySelectorAll('.navigation a');
+if (navLinks) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navigation) navigation.classList.remove('open');
+            if (hamButton) hamButton.classList.remove('open');
+        });
+    });
+}
