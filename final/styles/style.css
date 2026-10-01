@@ -1,0 +1,55 @@
+:root {
+    --primary: #194a24;
+    --accent: #5917d4;
+    --background: #FFF8E7;
+    --text: #2B2B2B;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Lora', serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+header h1, header h2 {
+    color: var(--background);
+}
+
+section {
+    border: 1px solid var(--accent);
+    padding: 1rem;
+    margin: 1rem 0;
+    background: white;
+}
+
+.color1 { background: #194a24; color: white; padding: 0.5rem; margin: 5px 0; }
+.color2 { background: #5917d4; color: black; padding: 0.5rem; margin: 5px 0; }
+.color3 { background: #FFF8E7; color: black; border: 1px solid black; padding: 0.5rem; margin: 5px 0; }
+.color4 { background: #2B2B2B; color: white; padding: 0.5rem; margin: 5px 0; }
+
+.font1 { font-family: 'Roboto', sans-serif; font-weight: 600; }
+.font2 { font-family: 'Lora', serif; }
+
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

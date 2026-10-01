@@ -31,3 +31,26 @@ nav{
     gap: 15px;
  } 
 }
+ .discover-grid {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 .";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .discover-card {
+    grid-template-areas:
+      "title title"
+      "image image"
+      "address address"
+      "desc desc"
+      "button button";
+  }
+  /* Hover effect - only for desktop */
+  .discover-card figure img:hover {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.1) contrast(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+    transition: all .4s ease;
+  }
+}

@@ -149,3 +149,57 @@ img {
 #np-card{animation-delay:.2s; border-left-color: green} #bronze-card{animation-delay:.4s; border-left-color: #CD7F32} #silver-card{animation-delay:.6s; border-left-color: silver} #gold-card{animation-delay:.8s; border-left-color: gold}
 @keyframes joinFade { from{opacity:0; transform:translateY(30px)} to{opacity:1; transform:translateY(0)} }
 @media(min-width:768px){ .join-layout { grid-template-columns: 1fr 1fr; } }
+.discover-page { padding: 1rem; }
+.visit-message { background: #e3f2fd; border-left: 5px solid #1976d2; padding: 1rem; margin: 1rem 0; font-weight: 600; border-radius: 4px; }
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: .5rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "desc"
+    "button";
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.discover-card h2 { grid-area: title; margin: 0; }
+.discover-card figure { grid-area: image; margin: 0; }
+.discover-card figure img { width: 100%; height: auto; border-radius: 6px; display: block; }
+.discover-card address { grid-area: address; font-style: italic; color: #555; font-size: .9rem; }
+.discover-card p { grid-area: desc; }
+.discover-card button { grid-area: button; padding: .6rem; background: #0a4a7a; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    grid-template-columns: 1fr 1fr;
+  }
+  .discover-card {
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image desc"
+      "image button";
+    grid-template-columns: 140px 1fr;
+  }
