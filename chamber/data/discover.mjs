@@ -4,7 +4,7 @@ export const discoverItems = [
       title: "Centurion Mall",
       address: "John Vorster Dr, Centurion, 0157",
       description: "A large shopping mall in the heart of Centurion with over 200 stores, restaurants and a cinema. It is a popular destination for shopping and entertainment.",
-      image: "images/discover1.webp",
+      image: "images/centurion-mall1.jpg",
       alt: "Centurion Mall"
     },
     {
@@ -12,7 +12,7 @@ export const discoverItems = [
         title: "SAAF Museum - Swartkop",
         address: "Trichsrdt Rd, Swartkop Air Base, Centurion, 0157",
         description: "This Air Force museum shows old figghter planes, helicopters and uniforms. Entry is free and it is great for families, schools and aviation fans.",
-        image: "images/discover2.jpg",
+        image: "images/air-force-museum.jpg",
         alt: "Air Force Museum"
     },
     {
@@ -20,7 +20,7 @@ export const discoverItems = [
     title: "Irene Dairy Farm",
     address: "Olifantsfontein Rd, Irene, Centurion, 0062",
     description: "A historic farm from 1902 that still makes fresh milk and cheese. You can tour the farm, buy fresh products and enjoy a picnic with your family.",
-    image: "images/discover3.webp",
+    image: "images/irene-farm.jpg",
     alt: "Irene Farm"
   },
   {
@@ -28,7 +28,7 @@ export const discoverItems = [
     title: "Centurion Lake",
     address: "Embankment Rd, Zwartkop, Centurion",
     description: "A beautiful lake in the heart of Centurion with paddle boats, walking paths and lakeside restaurants. Many companies use it for events and meetings.",
-    image: "images/discover4.webp",
+    image: "images/centurion-lake.jpg",
     alt: "Centurion Lake"
   },
   {
@@ -36,7 +36,7 @@ export const discoverItems = [
     title: "SuperSport Park",
     address: "SuperSport Park, Centurion, 0157",
     description: "International cricket stadium and home of the Titans. It hosts big cricket games, concerts and business conferences for the community.",
-    image: "images/discover5.webp",
+    image: "images/supersport-park.jpg",
     alt: "SuperSport Park"
   },
   {
@@ -44,7 +44,7 @@ export const discoverItems = [
     title: "Irene Village Mall",
     address: "Nellmapius Dr, Irene, Centurion, 0157",
     description: "An upmarket lifestyle mall in Irene with boutique shops and fine dining. It is known for its clean, quiet and secure shopping experience.",
-    image: "images/discover6.webp",
+    image: "images/irene-village-mall.jpg",
     alt: "Irene Village Mall"
   },
   {
@@ -52,7 +52,7 @@ export const discoverItems = [
     title: "Rietvlei Nature Reserve",
     address: "Game Reserve Ave, Rietvallei, Pretoria, 0178",
     description: "A 1700 hectare reserve near Centurion with rhinos, buffalo, cheetahs and over 200 bird species. You can do game drives, hiking and fishing.",
-    image: "images/discover7.webp",
+    image: "images/rietvlei-reserve.jpg",
     alt: "Rietvlei Reserve"
   },
   {
@@ -60,7 +60,7 @@ export const discoverItems = [
     title: "Smuts House Museum",
     address: "Jan Smuts Ave, Irene, Centurion, 0062",
     description: "The former home of General Jan Smuts, now a museum about South African history. The house, garden and tea shop show life from 100 years ago.",
-    image: "images/discover8.webp",
+    image: "images/smuts-house.jpg",
     alt: "Smuts House"
   }
 ];
