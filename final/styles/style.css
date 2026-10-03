@@ -1,5 +1,5 @@
 :root {
-    --primary: #194a24;
+    --primary: #d13131;
     --accent: #5917d4;
     --background: #FFF8E7;
     --text: #2B2B2B;
@@ -38,7 +38,7 @@ section {
     background: white;
 }
 
-.color1 { background: #194a24; color: white; padding: 0.5rem; margin: 5px 0; }
+.color1 { background: #d13131; color: white; padding: 0.5rem; margin: 5px 0; }
 .color2 { background: #5917d4; color: black; padding: 0.5rem; margin: 5px 0; }
 .color3 { background: #FFF8E7; color: black; border: 1px solid black; padding: 0.5rem; margin: 5px 0; }
 .color4 { background: #2B2B2B; color: white; padding: 0.5rem; margin: 5px 0; }
