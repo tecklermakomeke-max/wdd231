@@ -1,0 +1,136 @@
+[
+  {
+    "id":1, 
+    "name":"Golden Wedding Clutch",
+     "price":350, 
+     "color":"Gold", 
+     "material":"Glass beads", 
+     "image":"images/wedding-clutch.jpg", 
+     "desc":"Perfect for weddings"
+    },
+  {
+    "id":2,
+     "name":"Plum Evening Bag",
+      "price":280, 
+      "color":"Plum",
+       "material":"Acrylic beads",
+        "image":"images/evening-bag.jpg",
+        "desc":"Elegant evening bag"
+      },
+  {
+    "id":3,
+     "name":"Cream Bridal Purse",
+      "price":400, "color":"Cream", 
+      "material":"Pearl beads", 
+      "image":"images/bridal-purse.jpg", 
+      "desc":"For brides"
+    },
+  {
+    "id":4,
+     "name":"Black Party Bag",
+     "price":250, 
+     "color":"Black",
+      "material":"Glass beads", 
+      "image":"images/party-bag.jpg", 
+      "desc":"For parties"
+    },
+  {
+    "id":5,
+     "name":"Red African Bag",
+      "price":300,
+       "color":"Red", 
+       "material":"Wooden beads",
+        "image":"images/african-bag.jpg",
+         "desc":"African style"
+        },
+  {
+    "id":6,
+     "name":"Blue Beaded Tote",
+      "price":320, 
+      "color":"Blue", 
+      "material":"Glass beads",
+       "image":"images/beaded-tote.jpg",
+        "desc":"Daily use tote"
+      },
+  {
+    "id":7,
+     "name":"Silver Bag",
+      "price":200,
+       "color":"Silver", 
+       "material":"Acrylic beads", 
+       "image":"images/travelling-bag.jpg",
+        "desc":"travelling bag"
+      },
+  {
+    "id":8,
+     "name":"Pink Shoulder Bag", 
+    "price":270, 
+    "color":"Pink", 
+    "material":"Glass beads", 
+    "image":"images/shoulder-bag.jpg", 
+    "desc":"Shoulder bag"
+  },
+  {
+    "id":9, 
+    "name":"White Luxury Clutch", 
+    "price":380, 
+    "color":"White",
+     "material":"Crystal beads",
+      "image":"images/luxury-clutch.jpg",
+       "desc":"Luxury style"
+      },
+  {
+    "id":10, 
+    "name":"Purple Festival Bag", 
+    "price":260,
+     "color":"Purple", 
+     "material":"Plastic beads",
+      "image":"images/festive-bag.jpg", 
+      "desc":"For festivals"
+    },
+  {
+    "id":11,
+     "name":"Yellow Summer Bag",
+     "price":230, 
+     "color":"Yellow", 
+     "material":"Acrylic beads", 
+     "image":"images/summer-bag.jpg",
+      "desc":"Summer bag"
+    },
+  {
+    "id":12, 
+    "name":"Black Boho Bag",
+     "price":290,
+      "color":"Orange",
+       "material":"Wooden beads",
+        "image":"images/woodern.jpg", 
+        "desc":"Boho style"
+      },
+  {
+    "id":13,
+     "name":"white Gala Bag",
+      "price":450,
+       "color":"white",
+        "material":"Metal beads", 
+        "image":"images/gala-bag.jpg",
+         "desc":"For gala dinner"
+        },
+  {
+    "id":14,
+     "name":"Brown Classic Bag", 
+     "price":310, 
+     "color":"Brown", 
+     "material":"Glass beads",
+      "image":"images/classic-bag.jpg", 
+      "desc":"Classic look"
+    },
+  {
+    "id":15, 
+    "name":"Multicolor Beaded Bag",
+     "price":330, 
+     "color":"Multi", 
+     "material":"Mixed beads",
+      "image":"images/beaded-bag.jpg",
+       "desc":"All colors"
+      }
+]
